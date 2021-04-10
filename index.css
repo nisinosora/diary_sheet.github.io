@@ -1,0 +1,231 @@
+@media screen and (max-width:1024px) {
+  .main{
+    display:none;
+  }  
+}
+
+@media screen and (min-width:1024px) {
+  #pl{
+    position: absolute;
+    left: 870px;
+    top: 240px;
+  }
+  #friend_name{
+    position: absolute;
+    left: 710px;
+    top: 295px;
+  }
+  #medal{
+    position:absolute;
+    left: 770px;
+    top: 350px;
+  }
+  
+  /*シナリオ1*/
+  #scenario_name1{
+    position: absolute;
+    left: 210px;
+    top: 465px;
+  }
+  #scenario_date1{
+    position:absolute;
+    left:150px;
+    top: 498px;
+  }
+  #scenario_pg1{
+    position:absolute;
+    left:130px;
+    top:522px;
+  }
+  #scenario_pl1{
+    position:absolute;
+    left:130px;
+    top:545px;
+  }
+  #scenario_memo1{
+    position:absolute;
+    left:85px;
+    top:630px;
+  }
+  
+  /*シナリオ2*/
+  #scenario_name2{
+    position: absolute;
+    left: 420px;
+    top: 465px;
+  }
+  #scenario_date2{
+    position:absolute;
+    left:460px;
+    top: 498px;
+  }
+  #scenario_pg2{
+    position:absolute;
+    left:445px;
+    top:522px;
+  }
+  #scenario_pl2{
+    position:absolute;
+    left:445px;
+    top:545px;
+  }
+  #scenario_memo2{
+    position:absolute;
+    left:400px;
+    top:630px;
+  }
+  
+  /*シナリオ3*/
+  #scenario_name3{
+    position: absolute;
+    left: 740px;
+    top: 465px;
+  }
+  #scenario_date3{
+    position:absolute;
+    left:775px;
+    top: 498px;
+  }
+  #scenario_pg3{
+    position:absolute;
+    left:760px;
+    top:522px;
+  }
+  #scenario_pl3{
+    position:absolute;
+    left:760px;
+    top:545px;
+  }
+  #scenario_memo3{
+    position:absolute;
+    left:720px;
+    top:630px;
+  }
+  
+  /*シナリオ4*/
+  #scenario_name4{
+    position: absolute;
+    left: 110px;
+    top: 750px;
+  }
+  #scenario_date4{
+    position:absolute;
+    left:150px;
+    top: 785px;
+  }
+  #scenario_pg4{
+    position:absolute;
+    left:130px;
+    top:808px;
+  }
+  #scenario_pl4{
+    position:absolute;
+    left:130px;
+    top:832px;
+  }
+  #scenario_memo4{
+    position:absolute;
+    left:85px;
+    top:917px;
+  }
+  
+  /*シナリオ5*/
+  #scenario_name5{
+    position: absolute;
+    left: 420px;
+    top: 750px;
+  }
+  #scenario_date5{
+    position:absolute;
+    left:460px;
+    top: 785px;
+  }
+  #scenario_pg5{
+    position:absolute;
+    left:445px;
+    top:808px;
+  }
+  #scenario_pl5{
+    position:absolute;
+    left:445px;
+    top:832px;
+  }
+  #scenario_memo5{
+    position:absolute;
+    left:400px;
+    top:917px;
+  }
+  
+  /*シナリオ6*/
+  #scenario_name6{
+    position: absolute;
+    left: 740px;
+    top: 750px;
+  }
+  #scenario_date6{
+    position:absolute;
+    left:775px;
+    top: 785px;
+  }
+  #scenario_pg6{
+    position:absolute;
+    left:760px;
+    top:808px;
+  }
+  #scenario_pl6{
+    position:absolute;
+    left:760px;
+    top:832px;
+  }
+  #scenario_memo6{
+    position:absolute;
+    left:720px;
+    top:917px;
+  }
+  
+  /*出会ったフレンズリスト*/
+  .frineds_list{
+    position:absolute;
+    left:215px;
+  }
+  
+  #friend1{
+    top:1120px;
+  }
+  #friend2{
+    top:1175px;
+  }
+  #friend3{
+    top:1230px;
+  }
+  #friend4{
+    top:1280px;
+  }
+  #friend5{
+    top:1335px;
+  }
+  #friend6{
+    top:1390px;
+  }
+  #friend7{
+    top:1445px;
+  }
+  #friend8{
+    top:1498px;
+  }
+  #friend9{
+    top: 1550px;
+  }
+  
+  #bass{
+    position: absolute;
+    top: 1120px;
+    left:580px;
+  }
+  
+  #memo{
+    position: absolute;
+    top: 1370px;
+    left:560px;
+  } 
+}
