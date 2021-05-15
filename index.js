@@ -12,5 +12,6 @@ document.addEventListener('DOMContentLoaded',function(){
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
     img.src = links;
+    img.hidden = false;
   })
 });
