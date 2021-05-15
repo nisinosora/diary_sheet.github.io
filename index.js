@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded',function(){
     images.src = "./diary-sheet.jpg"
     width = images.naturalWidth;
     height = images.naturalHeight;
-    datas.setAttribute("widht", width);
-    datas.setAttribute("height", height);
+    var canvas = document.getElementById("canvased");
+    canvas.setAttribute("width", width);
+    canvas.setAttribute("height", height)
     datas.drawImage(images, 0, 0, width, height);
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
