@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded',function(){
     /*loading*/
     var datas = document.getElementById("canvased").getContext('2d');
     var images = new Image();
-    var img_width, img_height
     images.src = "./diary-sheet.jpg"
 
     /*文字取得*/
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(player.value, 870, 640);
 
     /*画像サイズ設定*/
+    var img_width, img_height
     img_width = images.naturalWidth;
     img_height = images.naturalHeight;
     datas.width = img_width;
