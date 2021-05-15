@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded',function(){
     images.src = "./diary-sheet.jpg"
     datas.drawImage(images, 0, 0, 400, 500);
     var links = document.getElementById("canvased").toDataURL("image/png");
-    alert(links);
+    var img = document.getElementById("diary")
+    img.src = img;
   })
 });
