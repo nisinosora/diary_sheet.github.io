@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',function(){
     /*文字取得*/
     var player;
     player = document.getElementById("pl");
-    datas.fillText(player.value, 870, 150);
+    datas.fillText(player.value, 870, 100);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
