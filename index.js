@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
   $("#make").on('click', function(){
     /*loading*/
     var datas = document.getElementById("canvased").getContext('2d');
+    var canvas = document.getElementById("canvased")
     var images = new Image();
     images.src = "./diary-sheet.jpg";
 
@@ -9,8 +10,8 @@ document.addEventListener('DOMContentLoaded',function(){
     var img_width, img_height;
     img_width = images.naturalWidth;
     img_height = images.naturalHeight;
-    datas.width = img_width;
-    datas.height = img_height;
+    canvas.width = img_width;
+    canvas.height = img_height;
     datas.drawImage(images, 0, 0, img_width, img_height);
 
     /*文字取得*/
