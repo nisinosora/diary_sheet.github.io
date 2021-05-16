@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',function(){
   $("#make").on('click', function(){
     /*loading*/
     var datas = document.getElementById("canvased").getContext('2d');
-    var canvas = document.getElementById("canvased")
+    var canvas = document.getElementById("canvased");
     var images = new Image();
     images.src = "./diary-sheet.jpg";
 
