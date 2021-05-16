@@ -5,7 +5,11 @@ input, textarea{
 #image{
   z-index: 0;
   top:130px;
-  position:absolute;
+  position: absolute;
+}
+#canvas_image{
+  position: absolute;
+  top: 1580px;
 }
 #make, header{
   z-index: 3;
