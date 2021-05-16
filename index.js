@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var player;
     player = document.getElementById("pl");
     datas.font = "14px 'ＭＳ ゴシック'";
-    datas.fillText(player.value, 870, 120);
+    datas.fillText(player.value, 870, 125);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
