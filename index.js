@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 383);
     datas.fillText(scenario_pg1.value, 120, 405);
-    line_change(datas, scenario_pl1.value, 120, 427, 2);
-    line_change(datas, scenario_memo1.value, 90, 520, 4);
+    line_change(datas, scenario_pl1.value, 120, 427, 17, 2);
+    line_change(datas, scenario_memo1.value, 90, 520, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
@@ -42,18 +42,27 @@ document.addEventListener('DOMContentLoaded',function(){
     img.hidden = false;
   })
 
-  function line_change(canvas, text, x, y, maxline){
+  function line_change(canvas, text, x, y, maxwidth, maxheight){
     if(text.indexOf("\n") >= 0){
-      var lines = text.split("\n");
+      var texts = text.split("");
+      var line = "";
+      var lines = [];
+      $.each(texts, function(index, val){
+        line = line + val;
+        if(index % maxwidth == 0){
+          line += "\n"
+          ary.push(line);
+          line = "";
+        }
+      })
+
       $.each(lines, function(index, val){
-        if(index < maxline){
+        if(index < maxheight){
           canvas.fillText(val, x, y + (14 * index));
         }else{
           return false;
         }
-      })
-    }else{
-      canvas.fillText(text, x, y);
-    }
+      });
+    };
   }
 });
