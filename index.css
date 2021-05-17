@@ -1,6 +1,9 @@
 input, textarea{
   position: absolute;
 }
+textarea{
+  resize: none;
+}
 
 #image{
   z-index: 0;
