@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_date1 = document.getElementById("scenario_date1");
     scenario_pg1 = document.getElementById("scenario_pg1");
     datas.fillText(scenario_name1.value, 200, 350);
-    datas.fillText(scenario_date1.value, 140, 381);
-    datas.fillText(scenario_pg1, 120, 401)
+    datas.fillText(scenario_date1.value, 140, 383);
+    datas.fillText(scenario_pg1.value, 120, 410)
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
