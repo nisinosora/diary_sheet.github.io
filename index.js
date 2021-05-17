@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     /*シナリオ1*/
-    
     scenario_name1 = document.getElementById("scenario_name1");
     scenario_date1 = document.getElementById("scenario_date1");
     scenario_pg1 = document.getElementById("scenario_pg1");
@@ -36,6 +35,18 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_pg1.value, 120, 405);
     line_change(datas, scenario_pl1.value, 120, 427, 17, 2);
     line_change(datas, scenario_memo1.value, 90, 520, 17, 4);
+
+    /*シナリオ2*/
+    scenario_name2 = document.getElementById("scenario_name2");
+    scenario_date2 = document.getElementById("scenario_date2");
+    scenario_pg2 = document.getElementById("scenario_pg2");
+    scenario_pl2 = document.getElementById("scenario_pl2");
+    scenario_memo2 = document.getElementById("scenario_memo2");
+    datas.fillText(scenario_name2.value, 410, 350);
+    datas.fillText(scenario_date2.value, 450, 383);
+    datas.fillText(scenario_pg2.value, 435, 405);
+    line_change(datas, scenario_pl2.value, 430, 427, 17, 2);
+    line_change(datas, scenario_memo2.value, 400, 520, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
