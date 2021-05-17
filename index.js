@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded',function(){
     /*シナリオ1*/
     scenario_name1 = document.getElementById("scenario_name1");
     scenario_date1 = document.getElementById("scenario_date1");
-    datas.fillText(scenario_name1.value, 200, 346);
-    datas.fillText(scenario_date1.value, 120, 381);
+    datas.fillText(scenario_name1.value, 200, 348);
+    datas.fillText(scenario_date1.value, 140, 381);
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
