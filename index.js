@@ -117,6 +117,12 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(friend8.value, 210, 1385);
     datas.fillText(friend9.value, 210, 1440);
 
+    //バスアイテム・メモ
+    buss = document.getElementById("buss");
+    memo = document.getElementById("memo");
+    line_change(datas, buss.value, 231, 1010, 28, 10);
+    line_change(datas, memo.value, 231, 1247, 31, 15);
+
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
     img.src = links;
