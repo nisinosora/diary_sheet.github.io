@@ -54,11 +54,23 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_pg3 = document.getElementById("scenario_pg3");
     scenario_pl3 = document.getElementById("scenario_pl3");
     scenario_memo3 = document.getElementById("scenario_memo3");
-    datas.fillText(scenario_name3.value, 720, 350);
+    datas.fillText(scenario_name3.value, 723, 350);
     datas.fillText(scenario_date3.value, 770, 383);
     datas.fillText(scenario_pg3.value, 755, 405);
     line_change(datas, scenario_pl3.value, 755, 427, 17, 2);
     line_change(datas, scenario_memo3.value, 710, 520, 17, 4);
+
+    /*シナリオ4*/
+    scenario_name4 = document.getElementById("scenario_name4");
+    scenario_date4 = document.getElementById("scenario_date4");
+    scenario_pg4 = document.getElementById("scenario_pg4");
+    scenario_pl4 = document.getElementById("scenario_pl4");
+    scenario_memo4 = document.getElementById("scenario_memo4");
+    datas.fillText(scenario_name4.value, 100, 637);
+    datas.fillText(scenario_date4.value, 140, 668);
+    datas.fillText(scenario_pg4.value, 120, 690);
+    line_change(datas, scenario_pl4.value, 120, 712, 17, 2);
+    line_change(datas, scenario_memo4.value, 80, 805, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
