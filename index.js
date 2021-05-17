@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(player.value, 865, 125);//プレイヤー名
     datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
-    /*シナリオ*/
+    /*シナリオ1*/
     scenario_name1 = document.getElementById("scenario_name1");
-    datas.fillText(scenario_name1.value, 200, 345);
+    scenario_date1 = document.getElementById("scenario_date1");
+    datas.fillText(scenario_name1.value, 200, 346);
+    datas.fillText(scenario_date1.value, 120, 381);
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
