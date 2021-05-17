@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded',function(){
     //バスアイテム・メモ
     buss = document.getElementById("buss");
     memo = document.getElementById("memo");
-    line_change(datas, buss.value, 554, 1010, 28, 10);
+    line_change(datas, buss.value, 560, 1010, 28, 10);
     line_change(datas, memo.value, 554, 1247, 31, 15);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
