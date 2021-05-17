@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',function(){
       lines = [];
       $.each(texts, function(index, val){
         line = line + val;
-        if(index % maxwidth == 0 && index != 0){
+        if(index+1 % maxwidth == 0){
           lines.push(line);
           line = "";
         }
