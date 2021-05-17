@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_date1.value, 140, 383);
     datas.fillText(scenario_pg1.value, 120, 405);
     line_change(datas, scenario_pl1.value, 120, 427, 2);
-    line_change(datas, scenario_memo1.value, 90, 527, 4);
+    line_change(datas, scenario_memo1.value, 90, 520, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
