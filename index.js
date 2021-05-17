@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name5.value, 410, 635);
     datas.fillText(scenario_date5.value, 450, 668);
     datas.fillText(scenario_pg5.value, 435, 690);
-    line_change(datas, scenario_pl5.value, 435, 742, 17, 5);
-    line_change(datas, scenario_memo5.value, 400, 835, 17, 4);
+    line_change(datas, scenario_pl5.value, 435, 712, 17, 5);
+    line_change(datas, scenario_memo5.value, 400, 805, 17, 4);
 
     /*シナリオ6*/
     scenario_name6 = document.getElementById("scenario_name6");
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name6.value, 723, 635);
     datas.fillText(scenario_date6.value, 770, 668);
     datas.fillText(scenario_pg6.value, 755, 690);
-    line_change(datas, scenario_pl6.value, 755, 742, 17, 2);
-    line_change(datas, scenario_memo6.value, 710, 835, 17, 4);
+    line_change(datas, scenario_pl6.value, 755, 712, 17, 2);
+    line_change(datas, scenario_memo6.value, 710, 805, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
