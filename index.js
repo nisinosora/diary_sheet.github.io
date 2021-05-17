@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.font = "14px 'ＭＳ ゴシック'";
     datas.fillText(player.value, 870, 125);//プレイヤー名
     datas.fillText(friend.value, 700, 175);//フレンズ名
-    datas.fillText(medal.value, 660, 115);//シナリオメダル
-
+    datas.fillText(medal.value, 760, 235);//シナリオメダル
+    
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
