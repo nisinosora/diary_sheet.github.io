@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_pl2 = document.getElementById("scenario_pl2");
     scenario_memo2 = document.getElementById("scenario_memo2");
     datas.fillText(scenario_name2.value, 410, 350);
-    datas.fillText(scenario_date2.value, 450, 383);
-    datas.fillText(scenario_pg2.value, 435, 405);
-    line_change(datas, scenario_pl2.value, 435, 427, 17, 2);
+    datas.fillText(scenario_date2.value, 455, 383);
+    datas.fillText(scenario_pg2.value, 440, 405);
+    line_change(datas, scenario_pl2.value, 440, 427, 17, 2);
     line_change(datas, scenario_memo2.value, 400, 520, 17, 4);
 
     /*シナリオ3*/
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_pl5 = document.getElementById("scenario_pl5");
     scenario_memo5 = document.getElementById("scenario_memo5");
     datas.fillText(scenario_name5.value, 410, 635);
-    datas.fillText(scenario_date5.value, 450, 668);
-    datas.fillText(scenario_pg5.value, 435, 690);
-    line_change(datas, scenario_pl5.value, 435, 712, 17, 5);
+    datas.fillText(scenario_date5.value, 455, 668);
+    datas.fillText(scenario_pg5.value, 440, 690);
+    line_change(datas, scenario_pl5.value, 440, 712, 17, 5);
     line_change(datas, scenario_memo5.value, 400, 805, 17, 4);
 
     /*シナリオ6*/
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     datas.fillText(friend1.value, 210, 1010);
     datas.fillText(friend2.value, 210, 1060);
-    datas.fillText(friend3.value, 210, 1110);
+    datas.fillText(friend3.value, 210, 1115);
     datas.fillText(friend4.value, 210, 1170);
     datas.fillText(friend5.value, 210, 1220);
     datas.fillText(friend6.value, 210, 1275);
