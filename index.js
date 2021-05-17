@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(text.indexOf("\n") >= 0){
       var lines = text.split("\n");
       $.each(lines, function(index, val){
-        canvas.fillText(val, x, y * (index + 1));
+        canvas.fillText(val, x, y + (14 * index));
       })
     }else{
       canvas.fillText(text, x, y);
