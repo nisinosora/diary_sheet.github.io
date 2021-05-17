@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded',function(){
     friend = document.getElementById("friend_name");
     medal = document.getElementById("medal");
     datas.font = "14px 'ＭＳ ゴシック'";
-    datas.fillText(player.value, 860, 125);//プレイヤー名
-    datas.fillText(friend.value, 700, 176);//フレンズ名
+    datas.fillText(player.value, 865, 125);//プレイヤー名
+    datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     
 
