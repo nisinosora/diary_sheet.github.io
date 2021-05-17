@@ -3,6 +3,8 @@ input, textarea{
 }
 textarea{
   resize: none;
+  text-overflow:ellipsis;
+  overflow: hidden;
 }
 
 #image{
