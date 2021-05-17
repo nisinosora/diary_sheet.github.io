@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 383);
     datas.fillText(scenario_pg1.value, 120, 405);
-    line_change(datas, scenario_pl1.value, 120, 427, 16, 2);
+    line_change(datas, scenario_pl1.value, 120, 427, 13, 2);
     line_change(datas, scenario_memo1.value, 90, 520, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
@@ -68,8 +68,9 @@ document.addEventListener('DOMContentLoaded',function(){
         }
       })
 
-      if(lines.length == 0){
+      if(line != ""){
         lines.push(line);
+        line = "";
       }
 
       $.each(lines, function(index, val){
