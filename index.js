@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded',function(){
     friend8 = document.getElementById("friend8");
     friend9 = document.getElementById("friend9");
 
-    datas.fillText(frined1.value, 210, 720);
+    datas.fillText(friend1.value, 210, 720);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
