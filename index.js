@@ -127,6 +127,13 @@ document.addEventListener('DOMContentLoaded',function(){
     var img = document.getElementById("diary");
     img.src = links;
     img.hidden = false;
+    var dl = document.getElementById("download");
+    if(dl.checked == true){
+      var a = document.createElement('a');
+      a.href = links;
+      a.download = "download.png";
+      a.click();
+    }
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
