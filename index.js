@@ -130,43 +130,31 @@ document.addEventListener('DOMContentLoaded',function(){
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
-    var lines;
-    if(text.indexOf("\n") >= 0){
-      lines = text.split("\n");
-      $.each(lines, function(index, val){
-        if(index < maxheight){
-          canvas.fillText(val, x, y + (14 * index));
-        }else{
-          return false;
-        };
-      })
-    }else{
-      var texts = text.split("");
-      var line = "";
-      var counter = 0;
-      lines = [];
-      $.each(texts, function(index, val){
-        line = line + val;
-        counter += 1;
-        if(counter == maxwidth){
-          lines.push(line);
-          line = "";
-          counter = 0;
-        }
-      })
-
-      if(line != ""){
+    var texts = text.split("");
+    var lines, line = "";
+    var counter = 0;
+    lines = [];
+    $.each(texts, function(index, val){
+      line = line + val;
+      counter += 1;
+      if(counter == maxwidth || val == "\n" || val == "\r"){
         lines.push(line);
         line = "";
+        counter = 0;
       }
+    })
 
-      $.each(lines, function(index, val){
-        if(index < maxheight){
-          canvas.fillText(val, x, y + (14 * index));
-        }else{
-          return false;
-        }
-      });
-    };
-  }
+    if(line != ""){
+      lines.push(line);
+      line = "";
+    }
+
+    $.each(lines, function(index, val){
+      if(index < maxheight){
+        canvas.fillText(val, x, y + (14 * index));
+      }else{
+        return false;
+      }
+    });
+  };
 });
