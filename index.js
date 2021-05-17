@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded',function(){
     //バスアイテム・メモ
     buss = document.getElementById("buss");
     memo = document.getElementById("memo");
-    line_change(datas, buss.value, 231, 1010, 28, 10);
-    line_change(datas, memo.value, 231, 1247, 31, 15);
+    line_change(datas, buss.value, 504, 1010, 28, 10);
+    line_change(datas, memo.value, 504, 1247, 31, 15);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
