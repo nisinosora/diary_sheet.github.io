@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.drawImage(images, 0, 0, img_width, img_height);
 
     /*文字取得*/
-    var player;
+    var player, friend;
     player = document.getElementById("pl");
     datas.font = "14px 'ＭＳ ゴシック'";
     datas.fillText(player.value, 870, 125);
+    datas.fillText(friend_name.value, 800, 175);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
