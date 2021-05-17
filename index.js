@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     /*シナリオ1*/
+    
     scenario_name1 = document.getElementById("scenario_name1");
     scenario_date1 = document.getElementById("scenario_date1");
     scenario_pg1 = document.getElementById("scenario_pg1");
