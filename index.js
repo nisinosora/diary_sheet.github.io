@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded',function(){
     friend8 = document.getElementById("friend8");
     friend9 = document.getElementById("friend9");
 
-    datas.fillText(friend1.value, 210, 1000);
-    datas.fillText(friend2.value, 210, 1055);
-    datas.fillText(friend3.value, 210, 1110);
-    datas.fillText(friend4.value, 210, 1165);
-    datas.fillText(friend5.value, 210, 1220);
+    datas.fillText(friend1.value, 210, 1020);
+    datas.fillText(friend2.value, 210, 1065);
+    datas.fillText(friend3.value, 210, 1120);
+    datas.fillText(friend4.value, 210, 1173);
+    datas.fillText(friend5.value, 210, 1225);
     datas.fillText(friend6.value, 210, 1275);
     datas.fillText(friend7.value, 210, 1330);
     datas.fillText(friend8.value, 210, 1385);
