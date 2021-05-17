@@ -17,9 +17,13 @@ document.addEventListener('DOMContentLoaded',function(){
     /*文字取得*/
     var player, friend;
     player = document.getElementById("pl");
+    friend = document.getElementById("friend_name");
+    medal = document.getElementById("medal");
     datas.font = "14px 'ＭＳ ゴシック'";
-    datas.fillText(player.value, 870, 125);
-    datas.fillText(friend_name.value, 800, 175);
+    datas.fillText(player.value, 870, 125);//プレイヤー名
+    datas.fillText(friend.value, 700, 175);//フレンズ名
+    datas.fillText(medal.value, 760, 115);//シナリオメダル
+    
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
