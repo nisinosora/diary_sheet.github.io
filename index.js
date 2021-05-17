@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var lines = [];
     $.each(texts, function(index, val){
       line = line + val;
-      if(index % maxwidth == 0){
+      if(index % maxwidth != 0){
         line += "\n"
         lines.push(line);
         line = "";
