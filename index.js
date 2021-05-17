@@ -43,26 +43,24 @@ document.addEventListener('DOMContentLoaded',function(){
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
-    if(text.indexOf("\n") >= 0){
-      var texts = text.split("");
-      var line = "";
-      var lines = [];
-      $.each(texts, function(index, val){
-        line = line + val;
-        if(index % maxwidth == 0){
-          line += "\n"
-          ary.push(line);
-          line = "";
-        }
-      })
+    var texts = text.split("");
+    var line = "";
+    var lines = [];
+    $.each(texts, function(index, val){
+      line = line + val;
+      if(index % maxwidth == 0){
+        line += "\n"
+        ary.push(line);
+        line = "";
+      }
+    })
 
-      $.each(lines, function(index, val){
-        if(index < maxheight){
-          canvas.fillText(val, x, y + (14 * index));
-        }else{
-          return false;
-        }
-      });
-    };
+    $.each(lines, function(index, val){
+      if(index < maxheight){
+        canvas.fillText(val, x, y + (14 * index));
+      }else{
+        return false;
+      }
+    });
   }
 });
