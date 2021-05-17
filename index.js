@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded',function(){
       line = line + val;
       if(index % maxwidth == 0){
         line += "\n"
-        ary.push(line);
+        lines.push(line);
         line = "";
       }
     })
