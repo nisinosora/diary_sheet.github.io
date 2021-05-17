@@ -135,12 +135,13 @@ document.addEventListener('DOMContentLoaded',function(){
     var counter = 0;
     lines = [];
     $.each(texts, function(index, val){
-      line = line + val;
-      counter += 1;
       if(counter == maxwidth || val == "\n" || val == "\r"){
         lines.push(line);
         line = "";
         counter = 0;
+      }else{
+        line = line + val;
+        counter += 1;
       }
     })
 
