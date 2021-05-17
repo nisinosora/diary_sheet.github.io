@@ -26,8 +26,10 @@ document.addEventListener('DOMContentLoaded',function(){
     /*シナリオ1*/
     scenario_name1 = document.getElementById("scenario_name1");
     scenario_date1 = document.getElementById("scenario_date1");
-    datas.fillText(scenario_name1.value, 200, 348);
+    scenario_pg1 = document.getElementById("scenario_pg1");
+    datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 381);
+    datas.fillText(scenario_pg1, 120, 401)
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
