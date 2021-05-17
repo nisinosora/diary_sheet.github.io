@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     /*シナリオ*/
     scenario_name1 = document.getElementById("scenario_name1");
-    datas.fillText(scenario_name1.value, 200, 120)
+    datas.fillText(scenario_name1.value, 200, 345);
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
