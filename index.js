@@ -107,15 +107,15 @@ document.addEventListener('DOMContentLoaded',function(){
     friend8 = document.getElementById("friend8");
     friend9 = document.getElementById("friend9");
 
-    datas.fillText(friend1.value, 210, 995);
-    datas.fillText(friend2.value, 210, 1050);
-    datas.fillText(friend3.value, 210, 1105);
-    datas.fillText(friend4.value, 210, 1175);
-    datas.fillText(friend5.value, 210, 1160);
-    datas.fillText(friend6.value, 210, 1280);
-    datas.fillText(friend7.value, 210, 1335);
-    datas.fillText(friend8.value, 210, 1390);
-    datas.fillText(friend9.value, 210, 1445);
+    datas.fillText(friend1.value, 210, 1000);
+    datas.fillText(friend2.value, 210, 1055);
+    datas.fillText(friend3.value, 210, 1110);
+    datas.fillText(friend4.value, 210, 1165);
+    datas.fillText(friend5.value, 210, 1220);
+    datas.fillText(friend6.value, 210, 1275);
+    datas.fillText(friend7.value, 210, 1330);
+    datas.fillText(friend8.value, 210, 1385);
+    datas.fillText(friend9.value, 210, 1440);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
