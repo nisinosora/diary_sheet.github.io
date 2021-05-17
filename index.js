@@ -27,9 +27,13 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_name1 = document.getElementById("scenario_name1");
     scenario_date1 = document.getElementById("scenario_date1");
     scenario_pg1 = document.getElementById("scenario_pg1");
+    scenario_pl1 = document.getElementById("scenario_pl1");
+    scenario_memo1 = document.getElementById("scenario_memo1");
     datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 383);
-    datas.fillText(scenario_pg1.value, 120, 410)
+    datas.fillText(scenario_pg1.value, 120, 405);
+    datas.fillText(scenario_pl1.value, 120, 427);
+    datas.fillText(scenario_memo1.value, 90, 527);
     
 
     var links = document.getElementById("canvased").toDataURL("image/png");
