@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded',function(){
   })
 
   function line_change(canvas, text, x, y){
-    if(text.indexOf("\n") >= 0){
-      var lines = text.split("\n");
+    if(text.indexOf("\n\r") >= 0){
+      var lines = text.split("\n\r");
       $.each(lines, function(index, val){
         canvas.fillText(val, x, y * index);
       })
