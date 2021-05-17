@@ -65,6 +65,10 @@ document.addEventListener('DOMContentLoaded',function(){
         }
       })
 
+      if(lines.length == 0){
+        lines.push(line);
+      }
+
       $.each(lines, function(index, val){
         if(index < maxheight){
           canvas.fillText(val, x, y + (14 * index));
