@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_pg4 = document.getElementById("scenario_pg4");
     scenario_pl4 = document.getElementById("scenario_pl4");
     scenario_memo4 = document.getElementById("scenario_memo4");
-    datas.fillText(scenario_name4.value, 90, 637);
+    datas.fillText(scenario_name4.value, 95, 637);
     datas.fillText(scenario_date4.value, 140, 668);
     datas.fillText(scenario_pg4.value, 120, 690);
     line_change(datas, scenario_pl4.value, 120, 712, 17, 2);
@@ -95,6 +95,19 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_pg6.value, 755, 690);
     line_change(datas, scenario_pl6.value, 755, 712, 17, 2);
     line_change(datas, scenario_memo6.value, 710, 805, 17, 4);
+
+    //フレンズリスト
+    friend1 = document.getElementById("friend1");
+    friend2 = document.getElementById("friend2");
+    friend3 = document.getElementById("friend3");
+    friend4 = document.getElementById("friend4");
+    friend5 = document.getElementById("friend5");
+    friend6 = document.getElementById("friend6");
+    friend7 = document.getElementById("friend7");
+    friend8 = document.getElementById("friend8");
+    friend9 = document.getElementById("friend9");
+
+    datas.fillText(frined1.value, 210, 720);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
