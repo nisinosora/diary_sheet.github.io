@@ -66,11 +66,35 @@ document.addEventListener('DOMContentLoaded',function(){
     scenario_pg4 = document.getElementById("scenario_pg4");
     scenario_pl4 = document.getElementById("scenario_pl4");
     scenario_memo4 = document.getElementById("scenario_memo4");
-    datas.fillText(scenario_name4.value, 100, 637);
+    datas.fillText(scenario_name4.value, 90, 637);
     datas.fillText(scenario_date4.value, 140, 668);
     datas.fillText(scenario_pg4.value, 120, 690);
     line_change(datas, scenario_pl4.value, 120, 712, 17, 2);
     line_change(datas, scenario_memo4.value, 80, 805, 17, 4);
+
+    /*シナリオ5*/
+    scenario_name5 = document.getElementById("scenario_name5");
+    scenario_date5 = document.getElementById("scenario_date5");
+    scenario_pg5 = document.getElementById("scenario_pg5");
+    scenario_pl5 = document.getElementById("scenario_pl5");
+    scenario_memo5 = document.getElementById("scenario_memo5");
+    datas.fillText(scenario_name5.value, 410, 635);
+    datas.fillText(scenario_date5.value, 450, 668);
+    datas.fillText(scenario_pg5.value, 435, 690);
+    line_change(datas, scenario_pl5.value, 435, 742, 17, 5);
+    line_change(datas, scenario_memo5.value, 400, 835, 17, 4);
+
+    /*シナリオ6*/
+    scenario_name6 = document.getElementById("scenario_name6");
+    scenario_date6 = document.getElementById("scenario_date6");
+    scenario_pg6 = document.getElementById("scenario_pg6");
+    scenario_pl6 = document.getElementById("scenario_pl6");
+    scenario_memo6 = document.getElementById("scenario_memo6");
+    datas.fillText(scenario_name6.value, 723, 635);
+    datas.fillText(scenario_date6.value, 770, 668);
+    datas.fillText(scenario_pg6.value, 755, 690);
+    line_change(datas, scenario_pl6.value, 755, 742, 17, 2);
+    line_change(datas, scenario_memo6.value, 710, 835, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
