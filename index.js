@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded',function(){
     img_height = images.naturalHeight;
     canvased.width = img_width;
     canvased.height = img_height;
+    datas.clearRect(0, 0, img_width, img_height);
     datas.drawImage(images, 0, 0, img_width, img_height);
 
     /*文字取得*/
@@ -32,13 +33,24 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 383);
     datas.fillText(scenario_pg1.value, 120, 405);
-    datas.fillText(scenario_pl1.value, 120, 427);
+    line_change(datas, scenario_pl1.value, 120, 427);
+    //datas.fillText(scenario_pl1.value, 120, 427);
     datas.fillText(scenario_memo1.value, 90, 527);
-    
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
     img.src = links;
     img.hidden = false;
   })
+
+  function line_change(canvas, text, x, y){
+    if(text.indexOf("\n") >= 0){
+      var lines = text.split("\n");
+      $.each(lines, function(index, val){
+        canvas.fillText(val, x, y * index);
+      })
+    }else{
+      canvas.fillText(text, x, y);
+    }
+  }
 });
