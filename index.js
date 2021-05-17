@@ -45,8 +45,20 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(scenario_name2.value, 410, 350);
     datas.fillText(scenario_date2.value, 450, 383);
     datas.fillText(scenario_pg2.value, 435, 405);
-    line_change(datas, scenario_pl2.value, 430, 427, 17, 2);
+    line_change(datas, scenario_pl2.value, 435, 427, 17, 2);
     line_change(datas, scenario_memo2.value, 400, 520, 17, 4);
+
+    /*シナリオ3*/
+    scenario_name3 = document.getElementById("scenario_name3");
+    scenario_date3 = document.getElementById("scenario_date3");
+    scenario_pg3 = document.getElementById("scenario_pg3");
+    scenario_pl3 = document.getElementById("scenario_pl3");
+    scenario_memo3 = document.getElementById("scenario_memo3");
+    datas.fillText(scenario_name3.value, 720, 350);
+    datas.fillText(scenario_date3.value, 770, 383);
+    datas.fillText(scenario_pg3.value, 755, 405);
+    line_change(datas, scenario_pl3.value, 755, 427, 17, 2);
+    line_change(datas, scenario_memo3.value, 710, 520, 17, 4);
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("diary");
