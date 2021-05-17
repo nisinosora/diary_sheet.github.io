@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
     var lines;
-    if(text.indexOf("\n\r") >= 0){
+    if(text.indexOf("\n") >= 0){
       lines = text.split("\n");
       $.each(lines, function(index, val){
         if(index < maxheight){
