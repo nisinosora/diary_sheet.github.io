@@ -56,12 +56,15 @@ document.addEventListener('DOMContentLoaded',function(){
     }else{
       var texts = text.split("");
       var line = "";
+      var counter = 0;
       lines = [];
       $.each(texts, function(index, val){
         line = line + val;
-        if(index+1 % maxwidth == 0){
+        counter += 1;
+        if(counter == maxwidth){
           lines.push(line);
           line = "";
+          counter = 0;
         }
       })
 
