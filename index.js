@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded',function(){
     lines = [];
     texts.forEach(function(val){
       if(counter == maxwidth || val == "\n" || val == "\r"){
-        lines.push(line);
         if((val != "\n" && val != "\r") || val != "\n\r"){
           line = line + val;
         }
+        lines.push(line);
         line = "";
         counter = 0;
       }else{
