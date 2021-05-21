@@ -141,16 +141,19 @@ document.addEventListener('DOMContentLoaded',function(){
     var lines, line = "";
     var counter = 0;
     lines = [];
-    $.each(texts, function(index, val){
+    texts.forEach(function(val){
       if(counter == maxwidth || val == "\n" || val == "\r"){
         lines.push(line);
+        if((val != "\n" && val != "\r") || val != "\n\r"){
+          line = line + val;
+        }
         line = "";
         counter = 0;
       }else{
         line = line + val;
         counter += 1;
       }
-    })
+    });
 
     if(line != ""){
       lines.push(line);
