@@ -25,28 +25,28 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     /*シナリオ1*/
-    scenario_name1 = document.getElementById("scenario_name" + 1);
-    scenario_date1 = document.getElementById("scenario_date" + 1);
-    scenario_pg1 = document.getElementById("scenario_pg" + 1);
-    scenario_pl1 = document.getElementById("scenario_pl" + 1);
-    scenario_memo1 = document.getElementById("scenario_memo" + 1);
-    datas.fillText(scenario_name1.value, 200, 350);
-    datas.fillText(scenario_date1.value, 140, 383);
-    datas.fillText(scenario_pg1.value, 120, 405);
-    line_change(datas, scenario_pl1.value, 120, 427, 17, 2);
-    line_change(datas, scenario_memo1.value, 90, 520, 17, 4);
+    scenario_name = document.getElementById("scenario_name" + 1);
+    scenario_date = document.getElementById("scenario_date" + 1);
+    scenario_pg = document.getElementById("scenario_pg" + 1);
+    scenario_pl = document.getElementById("scenario_pl" + 1);
+    scenario_memo = document.getElementById("scenario_memo" + 1);
+    datas.fillText(scenario_name.value, 200, 350);
+    datas.fillText(scenario_date.value, 140, 383);
+    datas.fillText(scenario_pg.value, 120, 405);
+    line_change(datas, scenario_pl.value, 120, 427, 17, 2);
+    line_change(datas, scenario_memo.value, 90, 520, 17, 4);
 
     /*シナリオ2*/
-    scenario_name2 = document.getElementById("scenario_name2");
-    scenario_date2 = document.getElementById("scenario_date2");
-    scenario_pg2 = document.getElementById("scenario_pg2");
-    scenario_pl2 = document.getElementById("scenario_pl2");
-    scenario_memo2 = document.getElementById("scenario_memo2");
-    datas.fillText(scenario_name2.value, 410, 350);
-    datas.fillText(scenario_date2.value, 455, 383);
-    datas.fillText(scenario_pg2.value, 440, 405);
-    line_change(datas, scenario_pl2.value, 440, 427, 17, 2);
-    line_change(datas, scenario_memo2.value, 400, 520, 17, 4);
+    scenario_name = document.getElementById("scenario_name" + 2);
+    scenario_date = document.getElementById("scenario_date" + 2);
+    scenario_pg = document.getElementById("scenario_pg" + 2);
+    scenario_pl = document.getElementById("scenario_pl" + 2);
+    scenario_memo = document.getElementById("scenario_memo" + 2);
+    datas.fillText(scenario_name.value, 410, 350);
+    datas.fillText(scenario_date.value, 455, 383);
+    datas.fillText(scenario_pg.value, 440, 405);
+    line_change(datas, scenario_pl.value, 440, 427, 17, 2);
+    line_change(datas, scenario_memo.value, 400, 520, 17, 4);
 
     /*シナリオ3*/
     scenario_name3 = document.getElementById("scenario_name3");
