@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(medal.value, 760, 235);//シナリオメダル
 
     //シナリオデータ取得：初期設定
+    var scenario_name, scenario_date, scenario_pg, scenario_pl, scenario_memo
     //シナリオ名、日付、PG、PL、メモ（各X, Y）
     //[シナリオ名_X, シナリオ名_Y, 日付_X, 日付_Y, PG_X, PG_Y, PL_X, PL_Y, Memo_X, Memo_Y]
-    let positions = [
+    let positions_scenario = [
       [200, 350, 140, 383, 120, 405, 120, 427, 90, 520],
       [410, 350, 455, 383, 440, 405, 440, 427, 400, 520],
       [723, 350, 770, 383, 755, 405, 755, 427, 710, 520],
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded',function(){
     ]
 
     /*シナリオ*/
-    $.each(positions, function(index, val){
+    $.each(positions_scenario, function(index, val){
       scenario_name = document.getElementById("scenario_name" + (index + 1));
       scenario_date = document.getElementById("scenario_date" + (index + 1));
       scenario_pg = document.getElementById("scenario_pg" + (index + 1));
@@ -52,25 +53,12 @@ document.addEventListener('DOMContentLoaded',function(){
     })
 
     //フレンズリスト
-    friend1 = document.getElementById("friend1");
-    friend2 = document.getElementById("friend2");
-    friend3 = document.getElementById("friend3");
-    friend4 = document.getElementById("friend4");
-    friend5 = document.getElementById("friend5");
-    friend6 = document.getElementById("friend6");
-    friend7 = document.getElementById("friend7");
-    friend8 = document.getElementById("friend8");
-    friend9 = document.getElementById("friend9");
-
-    datas.fillText(friend1.value, 210, 1010);
-    datas.fillText(friend2.value, 210, 1060);
-    datas.fillText(friend3.value, 210, 1115);
-    datas.fillText(friend4.value, 210, 1170);
-    datas.fillText(friend5.value, 210, 1220);
-    datas.fillText(friend6.value, 210, 1275);
-    datas.fillText(friend7.value, 210, 1330);
-    datas.fillText(friend8.value, 210, 1385);
-    datas.fillText(friend9.value, 210, 1440);
+    //フレンズ名_Y
+    let positions_friends = [1010, 1060, 1115, 1170, 1220, 1275, 1330, 1385, 1440]
+    $.each(positions_friends, function(index, val){
+      friend = document.getElementById("friend" + (index + 1));
+      datas.fillText(friend.value, 210, val);
+    })
 
     //バスアイテム・メモ
     buss = document.getElementById("buss");
