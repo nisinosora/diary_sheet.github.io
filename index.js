@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(friend.value, 700, 178);//フレンズ名
     datas.fillText(medal.value, 760, 235);//シナリオメダル
     /*シナリオ1*/
-    scenario_name1 = document.getElementById("scenario_name1");
-    scenario_date1 = document.getElementById("scenario_date1");
-    scenario_pg1 = document.getElementById("scenario_pg1");
-    scenario_pl1 = document.getElementById("scenario_pl1");
-    scenario_memo1 = document.getElementById("scenario_memo1");
+    scenario_name1 = document.getElementById("scenario_name" + 1);
+    scenario_date1 = document.getElementById("scenario_date" + 1);
+    scenario_pg1 = document.getElementById("scenario_pg" + 1);
+    scenario_pl1 = document.getElementById("scenario_pl" + 1);
+    scenario_memo1 = document.getElementById("scenario_memo" + 1);
     datas.fillText(scenario_name1.value, 200, 350);
     datas.fillText(scenario_date1.value, 140, 383);
     datas.fillText(scenario_pg1.value, 120, 405);
