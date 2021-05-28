@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.fillText(medal.value, 760, 235);//シナリオメダル
 
     //シナリオデータ取得：初期設定
-    var scenario_name, scenario_date, scenario_pg, scenario_pl, scenario_memo
+    var scenario_name, scenario_date, scenario_pg, scenario_pl, scenario_memo;
     //シナリオ名、日付、PG、PL、メモ（各X, Y）
     //[シナリオ名_X, シナリオ名_Y, 日付_X, 日付_Y, PG_X, PG_Y, PL_X, PL_Y, Memo_X, Memo_Y]
     let positions_scenario = [
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     //フレンズリスト
     //フレンズ名_Y
+    var friend;
     let positions_friends = [1010, 1060, 1115, 1170, 1220, 1275, 1330, 1385, 1440]
     $.each(positions_friends, function(index, val){
       friend = document.getElementById("friend" + (index + 1));
