@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded',function(){
-  $("#make").on('click', function(){
-    /*loading*/
+  $("#download").on('click', function(){
+    //loading
     var datas = document.getElementById("canvased").getContext('2d');
     var canvased = document.getElementById("canvased");
     var images = new Image();
     images.src = "./diary-sheet.jpg";
 
-    /*画像サイズ設定*/
+    //画像サイズ設定
     var img_width, img_height;
     img_width = images.naturalWidth;
     img_height = images.naturalHeight;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded',function(){
     datas.clearRect(0, 0, img_width, img_height);
     datas.drawImage(images, 0, 0, img_width, img_height);
 
-    /*文字取得*/
+    //文字取得
     var player, friend;
     player = document.getElementById("pl");
     friend = document.getElementById("friend_name");
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded',function(){
       [723, 635, 770, 668, 755, 690, 755, 712, 710, 805]
     ]
 
-    /*シナリオ*/
+    //シナリオ
     $.each(positions_scenario, function(index, val){
       scenario_name = document.getElementById("scenario_name" + (index + 1));
       scenario_date = document.getElementById("scenario_date" + (index + 1));
@@ -67,17 +67,13 @@ document.addEventListener('DOMContentLoaded',function(){
     line_change(datas, buss.value, 560, 1010, 28, 10);
     line_change(datas, memo.value, 554, 1247, 31, 15);
 
+    //ダウンロード処理
     var links = document.getElementById("canvased").toDataURL("image/png");
-    var img = document.getElementById("diary");
-    img.src = links;
-    img.hidden = false;
-    var dl = document.getElementById("download");
-    if(dl.checked == true){
-      var a = document.createElement('a');
-      a.href = links;
-      a.download = "download.png";
-      a.click();
-    }
+    var a = document.createElement('a');
+    var file_name = document.getElementById("file_name");
+    a.href = links;
+    a.download = file_name.value + ".png";
+    a.click();
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){

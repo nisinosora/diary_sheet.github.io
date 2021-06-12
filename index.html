@@ -16,8 +16,8 @@
     </p>
   </header>
   <p id="download_text">
-    <input type="button" value="作成" id="make">
-    作成後ダウンロードする：<input type="checkbox" name="download" id="download">
+    <input type="button" value="ダウンロード" id="download"><br>
+    <p id="file_name">ダウンロード時のファイル名：<input type="text" name="diary_sheet" id="diary-sheet-name" value="diary_sheet">.png</p>
   </p>
   <div class="images">
     <img src="./diary-sheet.jpg" alt="冒険の日記シート" id="image">
@@ -109,9 +109,11 @@
   </div>
   <br>
   <div id="canvas_image">
-    <p>ダウンロードファイル</p>
     <canvas id="canvased" hidden></canvas>
-    <img src="./" alt="日記" id="diary" hidden>
   </div>
 </body>
+<footer>
+  お問い合わせや不具合報告はこちらまで<br>
+  Twitter：<a href="https://twitter.com/KM_Paffin_love" target="_blank">@KM_Paffin_love</a>
+</footer>
 </html>

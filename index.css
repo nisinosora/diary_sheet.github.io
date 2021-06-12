@@ -1,3 +1,6 @@
+footer{
+  background-color: darkgray;
+}
 input, textarea{
   position: absolute;
 }
@@ -9,10 +12,14 @@ textarea{
 #make{
   position: relative;
 }
-
+#download_text, #file_name, #download, #diary-sheet-name{
+  z-index: 10;
+  position: relative;
+}
 #image{
   z-index: 0;
-  top:130px;
+  top: -40px;
+  position: relative;
 }
 #canvas_image{
   top: 1000px;
