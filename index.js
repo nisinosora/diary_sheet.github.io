@@ -70,9 +70,12 @@ document.addEventListener('DOMContentLoaded',function(){
     //ダウンロード処理
     var links = document.getElementById("canvased").toDataURL("image/png");
     var a = document.createElement('a');
-    var file_name = document.getElementById("diary-sheet-name");
+    var file_name = document.getElementById("diary-sheet-name").value;
+    if(file_name == ""){
+      file_name = "diary_sheet"
+    }
     a.href = links;
-    a.download = file_name.value + ".png";
+    a.download = file_name + ".png";
     a.click();
   })
 
