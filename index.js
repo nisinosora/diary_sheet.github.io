@@ -39,8 +39,12 @@ document.addEventListener('DOMContentLoaded',function(){
     ]
 
     //シナリオ
-    datas.font = "10px 'ＭＳ ゴシック'";
     $.each(positions_scenario, function(index, val){
+      if(index == 0){
+        datas.font = "10px 'ＭＳ ゴシック'";
+      }else{
+        datas.font = "14px 'ＭＳ ゴシック'";
+      }
       scenario_name = document.getElementById("scenario_name" + (index + 1));
       scenario_date = document.getElementById("scenario_date" + (index + 1));
       scenario_pg = document.getElementById("scenario_pg" + (index + 1));
@@ -51,7 +55,6 @@ document.addEventListener('DOMContentLoaded',function(){
       datas.fillText(scenario_pg.value, val[4], val[5]);
       line_change(datas, scenario_pl.value, val[6], val[7], 17, 2);
       line_change(datas, scenario_memo.value, val[8], val[9], 17, 4);
-      datas.font = "14px 'ＭＳ ゴシック'";
     })
 
     //フレンズリスト
