@@ -45,8 +45,10 @@ textarea{
 
 /*シナリオ1*/
 #scenario_name1{
-  left: 210px;
-  top: 505px;
+  left: 203px;
+  top: 510px;
+  font-size: 25%;
+  height: 15px;
 }
 #scenario_date1{
   left:150px;
