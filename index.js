@@ -1,5 +1,80 @@
 document.addEventListener('DOMContentLoaded',function(){
   $("#download").on('click', function(){
+    create();
+    //ダウンロード処理
+    var links = document.getElementById("canvased").toDataURL("image/png");
+    var a = document.createElement('a');
+    var file_name = document.getElementById("diary-sheet-name").value;
+    if(file_name == ""){
+      file_name = "diary_sheet"
+    }
+    a.href = links;
+    a.download = file_name + ".png";
+    a.click();
+  })
+
+  $("#share").on('click', function(){
+    create();
+    var infos
+    var images = []
+    infos = {
+      "text":"けものフレンズTRPG～てーぶるちほーの大冒険～：冒険の日記",
+      "url": "https://nisinosora.github.io/diary_sheet.github.io/",
+      "hashtags": "てーぶるちほー",
+      "image": [document.getElementById("canvased").src]
+    }
+
+    try{
+      infos["image"].forEach(function(value){
+        const blob = toBlob(value);
+        const imageFile = new File([blob], "image.png", {type: "image/png"});
+        images.push(imageFile)
+      });
+      navigator.share({
+        text: infos["text"],
+        url: infos["url"],
+        files: images,
+      })
+    }catch(e){
+      alert("エラーが発生しました。\n画像が存在しないか、ブラウザが非対応の可能性があります。");
+      console.log(e);
+    }
+  })
+
+  function line_change(canvas, text, x, y, maxwidth, maxheight){
+    var texts = text.split("");
+    var lines, line = "";
+    var counter = 0;
+    lines = [];
+    texts.forEach(function(val){
+      if(counter == maxwidth || val == "\n" || val == "\r"){
+        if((val != "\n" && val != "\r") || val != "\n\r"){
+          line = line + val;
+        }
+        lines.push(line);
+        line = "";
+        counter = 0;
+      }else{
+        line = line + val;
+        counter += 1;
+      }
+    });
+
+    if(line != ""){
+      lines.push(line);
+      line = "";
+    }
+
+    $.each(lines, function(index, val){
+      if(index < maxheight){
+        canvas.fillText(val, x, y + (14 * index));
+      }else{
+        return false;
+      }
+    });
+  };
+
+  function create(){
     //loading
     var datas = document.getElementById("canvased").getContext('2d');
     var canvased = document.getElementById("canvased");
@@ -71,49 +146,5 @@ document.addEventListener('DOMContentLoaded',function(){
     memo = document.getElementById("memo");
     line_change(datas, buss.value, 560, 1010, 28, 10);
     line_change(datas, memo.value, 554, 1247, 31, 15);
-
-    //ダウンロード処理
-    var links = document.getElementById("canvased").toDataURL("image/png");
-    var a = document.createElement('a');
-    var file_name = document.getElementById("diary-sheet-name").value;
-    if(file_name == ""){
-      file_name = "diary_sheet"
-    }
-    a.href = links;
-    a.download = file_name + ".png";
-    a.click();
-  })
-
-  function line_change(canvas, text, x, y, maxwidth, maxheight){
-    var texts = text.split("");
-    var lines, line = "";
-    var counter = 0;
-    lines = [];
-    texts.forEach(function(val){
-      if(counter == maxwidth || val == "\n" || val == "\r"){
-        if((val != "\n" && val != "\r") || val != "\n\r"){
-          line = line + val;
-        }
-        lines.push(line);
-        line = "";
-        counter = 0;
-      }else{
-        line = line + val;
-        counter += 1;
-      }
-    });
-
-    if(line != ""){
-      lines.push(line);
-      line = "";
-    }
-
-    $.each(lines, function(index, val){
-      if(index < maxheight){
-        canvas.fillText(val, x, y + (14 * index));
-      }else{
-        return false;
-      }
-    });
   };
 });
