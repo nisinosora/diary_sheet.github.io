@@ -147,4 +147,20 @@ document.addEventListener('DOMContentLoaded',function(){
     line_change(datas, buss.value, 560, 1010, 28, 10);
     line_change(datas, memo.value, 554, 1247, 31, 15);
   };
+
+  const toBlob = (base64) => {
+    const decodedData = atob(base64.replace(/^.*,/, ""));
+    const buffers = new Uint8Array(decodedData.length);
+    for (let i = 0; i < decodedData.length; i++) {
+      buffers[i] = decodedData.charCodeAt(i);
+    }
+    try {
+      const blob = new Blob([buffers.buffer], {
+        type: "image/png",
+      });
+      return blob;
+    } catch (e) {
+      return null;
+    }
+  };
 });
