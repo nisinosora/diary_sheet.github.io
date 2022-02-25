@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded',function(){
     create();
     var infos
     var images = []
+    var image = document.getElementById("canvas_img");
+    image.src = document.getElementById("canvased").src;
     infos = {
       "text":"けものフレンズTRPG～てーぶるちほーの大冒険～：冒険の日記",
       "url": "https://nisinosora.github.io/diary_sheet.github.io/",
       "hashtags": "てーぶるちほー",
-      "image": [document.getElementById("canvased").src]
+      "image": [image]
     }
 
     try{
