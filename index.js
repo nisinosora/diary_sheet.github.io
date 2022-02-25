@@ -17,13 +17,12 @@ document.addEventListener('DOMContentLoaded',function(){
     create();
     var infos
     var images = []
-    var image = document.getElementById("canvas_img");
-    image.src = document.getElementById("canvased").src;
+    document.getElementById("canvas_img").src = document.getElementById("canvased").src;
     infos = {
       "text":"けものフレンズTRPG～てーぶるちほーの大冒険～：冒険の日記",
       "url": "https://nisinosora.github.io/diary_sheet.github.io/",
       "hashtags": "てーぶるちほー",
-      "image": [image]
+      "image": [document.getElementById("canvas_img").src]
     }
 
     try{
@@ -148,6 +147,10 @@ document.addEventListener('DOMContentLoaded',function(){
     memo = document.getElementById("memo");
     line_change(datas, buss.value, 560, 1010, 28, 10);
     line_change(datas, memo.value, 554, 1247, 31, 15);
+
+    var links = document.getElementById("canvased").toDataURL("image/png");
+    document.getElementById("canvased").src = links;
+    document.getElementById("canvas_img").src = document.getElementById("canvased");
   };
 
   const toBlob = (base64) => {
