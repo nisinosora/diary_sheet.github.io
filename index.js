@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     var links = document.getElementById("canvased").toDataURL("image/png");
     document.getElementById("canvased").src = links;
-    document.getElementById("canvas_img").src = document.getElementById("canvased");
+    document.getElementById("canvas_img").src = document.getElementById("canvased").src;
   };
 
   const toBlob = (base64) => {
