@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded',function(){
     }
   })
 
+  $("#create").on('click', function(){
+    create();
+    var links = document.getElementById("canvased").toDataURL("image/png");
+    window.open(links, '_blank');
+  })
+
   function line_change(canvas, text, x, y, maxwidth, maxheight){
     var texts = text.split("");
     var lines, line = "";

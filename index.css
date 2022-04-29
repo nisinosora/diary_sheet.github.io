@@ -1,12 +1,9 @@
 footer{
   background-color: darkgray;
 }
-input, textarea{
-  position: absolute;
-}
 textarea{
   resize: none;
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 #make{
@@ -16,11 +13,15 @@ textarea{
   z-index: 10;
   position: relative;
 }
-#image{
-  z-index: 0;
-  top: -40px;
-  position: relative;
+table{
+  border-collapse: collapse;
+  border: 1px solid black;
 }
+td, th, tr{
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
 #canvas_image{
   top: 1000px;
 }
@@ -28,194 +29,4 @@ textarea{
 #div_pl{
   margin: 0;
   padding: 0;
-}
-
-#pl{
-  left: 870px;
-  top: 280px;
-}
-#friend_name{
-  left: 710px;
-  top: 335px;
-}
-#medal{
-  left: 770px;
-  top: 390px;
-}
-
-/*シナリオ1*/
-#scenario_name1{
-  left: 203px;
-  top: 510px;
-  font-size: 25%;
-  height: 15px;
-}
-#scenario_date1{
-  left:150px;
-  top: 538px;
-}
-#scenario_pg1{
-  left:130px;
-  top:562px;
-}
-#scenario_pl1{
-  left:130px;
-  top:585px;
-}
-#scenario_memo1{
-  left:85px;
-  top:670px;
-}
-
-/*シナリオ2*/
-#scenario_name2{
-  left: 420px;
-  top: 505px;
-}
-#scenario_date2{
-  left:460px;
-  top: 538px;
-}
-#scenario_pg2{
-  left:445px;
-  top:562px;
-}
-#scenario_pl2{
-  left:445px;
-  top:585px;
-}
-#scenario_memo2{
-  left:400px;
-  top:670px;
-}
-
-/*シナリオ3*/
-#scenario_name3{
-  left: 740px;
-  top: 505px;
-}
-#scenario_date3{
-  left:775px;
-  top: 538px;
-}
-#scenario_pg3{
-  left:760px;
-  top:562px;
-}
-#scenario_pl3{
-  left:760px;
-  top:585px;
-}
-#scenario_memo3{
-  left:720px;
-  top:670px;
-}
-
-/*シナリオ4*/
-#scenario_name4{
-  left: 110px;
-  top: 790px;
-}
-#scenario_date4{
-  left:150px;
-  top: 825px;
-}
-#scenario_pg4{
-  left:130px;
-  top:848px;
-}
-#scenario_pl4{
-  left:130px;
-  top:872px;
-}
-#scenario_memo4{
-  left:85px;
-  top:957px;
-}
-
-/*シナリオ5*/
-#scenario_name5{
-  left: 420px;
-  top: 790px;
-}
-#scenario_date5{
-  left:460px;
-  top: 825px;
-}
-#scenario_pg5{
-  left:445px;
-  top:848px;
-}
-#scenario_pl5{
-  left:445px;
-  top:872px;
-}
-#scenario_memo5{
-  left:400px;
-  top:957px;
-}
-
-/*シナリオ6*/
-#scenario_name6{
-  left: 740px;
-  top: 790px;
-}
-#scenario_date6{
-  left:775px;
-  top: 825px;
-}
-#scenario_pg6{
-  left:760px;
-  top:848px;
-}
-#scenario_pl6{
-  left:760px;
-  top:872px;
-}
-#scenario_memo6{
-  left:720px;
-  top:957px;
-}
-
-/*出会ったフレンズリスト*/
-.frineds_list{
-  left:215px;
-}
-
-#friend1{
-  top:1160px;
-}
-#friend2{
-  top:1215px;
-}
-#friend3{
-  top:1270px;
-}
-#friend4{
-  top:1320px;
-}
-#friend5{
-  top:1375px;
-}
-#friend6{
-  top:1430px;
-}
-#friend7{
-  top:1485px;
-}
-#friend8{
-  top:1538px;
-}
-#friend9{
-  top: 1590px;
-}
-
-#buss{
-  top: 1160px;
-  left:580px;
-}
-
-#memo{
-  top: 1410px;
-  left:560px;
 }

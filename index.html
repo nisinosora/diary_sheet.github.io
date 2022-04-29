@@ -27,96 +27,166 @@
     </p>
   </header>
   <p id="download_text">
+    <input type="button" value="作成確認" id="create">
     <input type="button" value="ダウンロード" id="download">
     <input type="button" value="共有" id="share"><br>
     <p id="file_name">ダウンロード時のファイル名：<input type="text" name="diary_sheet" id="diary-sheet-name" value="diary_sheet">.png</p>
   </p>
-  <div class="images">
-    <img src="./diary-sheet.jpg" alt="冒険の日記シート" id="image">
-  </div>
-  
+
   <div class="main">
     <div id="div_pl">
       <!--プレイヤー名-->
+      <label for="pl">PL名：</label>
       <input type="text" id="pl" size="16" maxlength="9" style="width: 130px;">
     </div>
     <div id="div_friend_name">
       <!--フレンズ名-->
+      <label for="friend_name">フレンズ名：</label>
       <input type="text" id="friend_name" size="41" maxlength="21" style="width: 290px;">
     </div>
     <div id="div_medal">
       <!--シナリオメダル数-->
+      <label for="medal">シナリオメダル数：</label>
       <input type="number" name="medal" id="medal" size="1" min="0" max="6" maxlength="1">
     </div>
+    <br>
     <div id="div_scenario_all">
-      <div id="div_scenario1">
-        <!--シナリオ1-->
-        <input type="text" name="scenario_name" id="scenario_name1" maxlength="16" style="width: 140px;">
-        <input type="text" name="scenario_date" id="scenario_date1" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg1" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl1" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo1" cols="30" rows="4" maxlength="51"></textarea>
-      </div>
-      <div id="div_scenario2">
-        <!--シナリオ2-->
-        <input type="text" name="scenario_name" id="scenario_name2" style="width: 230px;" maxlength="16">
-        <input type="text" name="scenario_date" id="scenario_date2" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg2" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl2" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo2" cols="30" rows="4" maxlength="51" ></textarea>
-      </div>
-      <div id="div_scenario3">
-        <!--シナリオ3-->
-        <input type="text" name="scenario_name" id="scenario_name3" style="width: 230px;" maxlength="16">
-        <input type="text" name="scenario_date" id="scenario_date3" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg3" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl3" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo3" cols="30" rows="4" maxlength="51"></textarea>
-      </div>
-      <div id="div_scenario4">
-        <!--シナリオ4-->
-        <input type="text" name="scenario_name" id="scenario_name4" style="width: 230px;" maxlength="16">
-        <input type="text" name="scenario_date" id="scenario_date4" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg4" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl4" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo4" cols="30" rows="4" maxlength="51" ></textarea>
-      </div>
-      <div id="div_scenario5">
-        <!--シナリオ5-->
-        <input type="text" name="scenario_name" id="scenario_name5" style="width: 230px;" maxlength="16">
-        <input type="text" name="scenario_date" id="scenario_date5" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg5" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl5" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo5" cols="30" rows="4" maxlength="51" ></textarea>
-      </div>
-      <div id="div_scenario6">
-        <!--シナリオ6-->
-        <input type="text" name="scenario_name" id="scenario_name6" style="width: 230px;" maxlength="16">
-        <input type="text" name="scenario_date" id="scenario_date6" maxlength="11">
-        <input type="text" name="scenario_pg" id="scenario_pg6" maxlength="11">
-        <textarea name="scenario_pl" id="scenario_pl6" cols="30" rows="2" maxlength="32"></textarea>
-        <textarea name="scenario_memo" id="scenario_memo6" cols="30" rows="4" maxlength="51" ></textarea>
-      </div>
+      <table>
+        <tr>
+          <th>シナリオ1</th>
+          <th>シナリオ2</th>
+          <th>シナリオ3</th>
+        </tr>
+        <tr>
+          <td>
+            <div id="div_scenario1" class="div_scenario">
+              <!--シナリオ1-->
+              <label for="scenario_name1">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name1" maxlength="16" style="width: 140px;"><br>
+              <label for="scenario_date1">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date1" maxlength="11"><br>
+              <label for="scenario_pg1">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg1" maxlength="11"><br>
+              <label for="scenario_pl1">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl1" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo1">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo1" cols="30" rows="4" maxlength="51"></textarea><br>
+            </div>
+          </td>
+          <td>
+            <div id="div_scenario2" class="div_scenario">
+              <!--シナリオ2-->
+              <label for="scenario_name2">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name2" style="width: 230px;" maxlength="16"><br>
+              <label for="scenario_date2">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date2" maxlength="11"><br>
+              <label for="scenario_pg2">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg2" maxlength="11"><br>
+              <label for="scenario_pl2">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl2" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo2">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo2" cols="30" rows="4" maxlength="51" ></textarea>
+            </div>
+          </td>
+          <td>
+            <div id="div_scenario3" class="div_scenario">
+              <!--シナリオ3-->
+              <label for="scenario_name3">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name3" style="width: 230px;" maxlength="16"><br>
+              <label for="scenario_date3">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date3" maxlength="11"><br>
+              <label for="scenario_pg3">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg3" maxlength="11"><br>
+              <label for="scenario_pl3">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl3" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo3">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo3" cols="30" rows="4" maxlength="51"></textarea>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>シナリオ4</th>
+          <th>シナリオ5</th>
+          <th>シナリオ6</th>
+        </tr>
+        <tr>
+          <td>
+            <div id="div_scenario4" class="div_scenario">
+              <!--シナリオ4-->
+              <label for="scenario_name4">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name4" style="width: 230px;" maxlength="16"><br>
+              <label for="scenario_date4">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date4" maxlength="11"><br>
+              <label for="scenario_pg4">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg4" maxlength="11"><br>
+              <label for="scenario_pl4">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl4" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo4">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo4" cols="30" rows="4" maxlength="51" ></textarea>
+            </div>
+          </td>
+          <td>
+            <div id="div_scenario5" class="div_scenario">
+              <!--シナリオ5-->
+              <label for="scenario_name5">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name5" style="width: 230px;" maxlength="16"><br>
+              <label for="scenario_date5">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date5" maxlength="11"><br>
+              <label for="scenario_pg5">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg5" maxlength="11"><br>
+              <label for="scenario_pl5">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl5" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo5">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo5" cols="30" rows="4" maxlength="51" ></textarea>
+            </div>
+          </td>
+          <td>
+            <div id="div_scenario6" class="div_scenario">
+              <!--シナリオ6-->
+              <label for="scenario_name6">シナリオ名：</label>
+              <input type="text" name="scenario_name" id="scenario_name6" style="width: 230px;" maxlength="16"><br>
+              <label for="scenario_date6">セッション日：</label>
+              <input type="text" name="scenario_date" id="scenario_date6" maxlength="11"><br>
+              <label for="scenario_pg6">PG名：</label>
+              <input type="text" name="scenario_pg" id="scenario_pg6" maxlength="11"><br>
+              <label for="scenario_pl6">PL名（複数可）：</label><br>
+              <textarea name="scenario_pl" id="scenario_pl6" cols="30" rows="2" maxlength="32"></textarea><br>
+              <label for="scenario_memo6">シナリオメモ（感想等）：</label><br>
+              <textarea name="scenario_memo" id="scenario_memo6" cols="30" rows="4" maxlength="51" ></textarea>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
     
     <div id="div_friends_list">
-      <!--出会ったフレンズリスト-->
-      <input type="text" name="friend" id="friend1" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend2" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend3" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend4" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend5" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend6" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend7" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend8" class="frineds_list main" style="width: 280px;" maxlength="21">
-      <input type="text" name="friend" id="friend9" class="frineds_list main" style="width: 280px;" maxlength="21">
+      <table>
+        <tr>
+          <th>出会ったフレンズリスト</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="friend" id="friend1" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend2" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend3" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend4" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend5" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend6" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend7" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend8" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+            <input type="text" name="friend" id="friend9" class="frineds_list" style="width: 280px;" maxlength="21"><br>
+          </td>
+        </tr>
+      </table>      
     </div>
-    
+    <br>
 
     <!--バスにしまったアイテム-->
-    <textarea name="buss" id="buss" cols="50" rows="10" maxlength="289"></textarea>
+    <h4>バスにしまったアイテム</h4>
+    <textarea name="buss" id="buss" cols="50" rows="10" maxlength="289"></textarea><br>
 
     <!--メモ-->
+    <h4>その他メモ</h4>
     <textarea name="memo" id="memo" cols="55" rows="15" maxlength="479" style="height: 210px;"></textarea>
   </div>
   <br>
