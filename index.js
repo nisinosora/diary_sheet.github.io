@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("canvas_img")
     img.src = document.getElementById("canvased").src;
-    window.open(img.src, '_blank');
+    window.open(img.src, "imgwindow", "width=866,height=580");
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
