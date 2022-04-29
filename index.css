@@ -19,7 +19,40 @@ table{
 }
 td, th, tr{
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 5px solid rgb(186, 225, 241);
+  color: rgb(23, 124, 164);
+}
+#sheet_title{
+ background-color: rgb(150, 25, 213); 
+ border: rgb(186, 225, 241) 5px solid;
+ color: white;
+}
+#div_buss{
+  background-color: rgb(142, 185, 159);
+  border: rgb(186, 225, 241) 5px solid;
+  color: white;
+  width:fit-content;
+  margin-bottom: 15px;
+}
+
+#div_memo{
+  border: rgb(186, 225, 241) 5px solid;
+  width:fit-content;
+  color: rgb(23, 124, 164);
+}
+
+#div_buss textarea, #div_memo textarea, #div_friends_list input{
+  border: rgb(186, 225, 241) 3px solid;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#div_buss h4, #div_memo h4{
+  text-align: center;
+}
+
+th{
+  font: aqua;
 }
 
 #canvas_image{
