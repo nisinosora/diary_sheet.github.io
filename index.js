@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded',function(){
     create();
     var links = document.getElementById("canvased").toDataURL("image/png");
     var img = document.getElementById("canvas_img")
-    img.href = links.src;
+    img.src = links;
     window.open(img.src, "imgwindow", "width=866,height=580");
   })
 
