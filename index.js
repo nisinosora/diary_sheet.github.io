@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
   $("#create").on('click', function(){
     create();
     var dataUrl = document.getElementById("canvas_img").src
-    var w = window.open('about:blank');
+    var w = window.open('about:blank', "imgwindow");
     w.document.write("<img src='" + dataUrl + "'/>");
   })
 
