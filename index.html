@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="chrome">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nisinosora.github.io/diary_sheet.github.io/">
   <meta property="og:image" content="https://nisinosora.github.io/diary_sheet.github.io/diary-sheet.jpg">
@@ -38,24 +38,41 @@
   </div>
 
   <div class="main">
-    <div id="div_pl">
-      <!--プレイヤー名-->
-      <label for="pl">PL名：</label>
-      <input type="text" id="pl" size="16" maxlength="9" style="width: 130px;">
-    </div>
-    <div id="div_friend_name">
-      <!--フレンズ名-->
-      <label for="friend_name">フレンズ名：</label>
-      <input type="text" id="friend_name" size="41" maxlength="21" style="width: 290px;">
-    </div>
-    <div id="div_medal">
-      <!--シナリオメダル数-->
-      <label for="medal">シナリオメダル数：</label>
-      <input type="number" name="medal" id="medal" size="1" min="0" max="6" maxlength="1">
-    </div>
-    <br>
     <div id="div_scenario_all">
       <table>
+        <tr id="title_img">
+          <td rowspan="4" id="title_img_td">
+              <img src="./title.jpg" alt="title">
+          </td>
+        </tr>
+        <tr>
+          <th id="title">冒険の日記</th>
+          <td class="border">
+            <div id="div_pl">
+              <!--プレイヤー名-->
+              <label for="pl">PL名：</label>
+              <input type="text" id="pl" size="16" maxlength="9" style="width: 130px;">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="border">
+            <div id="div_friend_name">
+              <!--フレンズ名-->
+              <label for="friend_name">フレンズ名：</label>
+              <input type="text" id="friend_name" size="41" maxlength="21" style="width: 290px;">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="border">
+            <div id="div_medal">
+              <!--シナリオメダル数-->
+              <label for="medal">シナリオメダル数：</label>
+              <input type="number" name="medal" id="medal" size="1" min="1" max="100">
+            </div>
+          </td>
+        </tr>
         <tr>
           <th id="sheet_title" colspan="3">冒険の記録</th>
         </tr>
@@ -65,11 +82,11 @@
           <th>シナリオ3</th>
         </tr>
         <tr>
-          <td>
+          <td class="border">
             <div id="div_scenario1" class="div_scenario">
               <!--シナリオ1-->
               <label for="scenario_name1">シナリオ名：</label>
-              <input type="text" name="scenario_name" id="scenario_name1" maxlength="16" style="width: 140px;"><br>
+              <input type="text" name="scenario_name" id="scenario_name1" maxlength="16" style="width: 230px;"><br>
               <label for="scenario_date1">セッション日：</label>
               <input type="text" name="scenario_date" id="scenario_date1" maxlength="11"><br>
               <label for="scenario_pg1">PG名：</label>
@@ -80,7 +97,7 @@
               <textarea name="scenario_memo" id="scenario_memo1" cols="30" rows="4" maxlength="51"></textarea><br>
             </div>
           </td>
-          <td>
+          <td class="border">
             <div id="div_scenario2" class="div_scenario">
               <!--シナリオ2-->
               <label for="scenario_name2">シナリオ名：</label>
@@ -95,7 +112,7 @@
               <textarea name="scenario_memo" id="scenario_memo2" cols="30" rows="4" maxlength="51" ></textarea>
             </div>
           </td>
-          <td>
+          <td class="border">
             <div id="div_scenario3" class="div_scenario">
               <!--シナリオ3-->
               <label for="scenario_name3">シナリオ名：</label>
@@ -117,7 +134,7 @@
           <th>シナリオ6</th>
         </tr>
         <tr>
-          <td>
+          <td class="border">
             <div id="div_scenario4" class="div_scenario">
               <!--シナリオ4-->
               <label for="scenario_name4">シナリオ名：</label>
@@ -132,7 +149,7 @@
               <textarea name="scenario_memo" id="scenario_memo4" cols="30" rows="4" maxlength="51" ></textarea>
             </div>
           </td>
-          <td>
+          <td class="border">
             <div id="div_scenario5" class="div_scenario">
               <!--シナリオ5-->
               <label for="scenario_name5">シナリオ名：</label>
@@ -147,7 +164,7 @@
               <textarea name="scenario_memo" id="scenario_memo5" cols="30" rows="4" maxlength="51" ></textarea>
             </div>
           </td>
-          <td>
+          <td class="border">
             <div id="div_scenario6" class="div_scenario">
               <!--シナリオ6-->
               <label for="scenario_name6">シナリオ名：</label>
@@ -172,7 +189,7 @@
           <th>出会ったフレンズのリスト</th>
         </tr>
         <tr>
-          <td>
+          <td class="border">
             <label for="friend1">フレンズ名：</label>
             <input type="text" name="friend" id="friend1" class="frineds_list" style="width: 280px;" maxlength="21"><br>
             <label for="friend2">フレンズ名：</label>
