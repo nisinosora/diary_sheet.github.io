@@ -45,7 +45,7 @@ table{
   color: rgb(23, 124, 164);
 }
 
-#div_buss textarea, #div_memo textarea, #div_friends_list input{
+.main input, .main textarea, #div_buss textarea, #div_memo textarea, #div_friends_list input{
   border: rgb(186, 225, 241) 3px solid;
   margin-left: 10px;
   margin-right: 10px;

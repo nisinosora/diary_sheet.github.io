@@ -44,9 +44,13 @@ document.addEventListener('DOMContentLoaded',function(){
 
   $("#create").on('click', function(){
     create();
+    var file_name = document.getElementById("diary-sheet-name").value;
+    if(file_name == ""){
+      file_name = "冒険の日記"
+    }
     var dataUrl = document.getElementById("canvas_img").src
     var w = window.open("imgwindow");
-    w.document.write("<img src='" + dataUrl + "'/>");
+    w.document.write(`<title>${file_name}</title><img src='${dataUrl}'/>`);
   })
 
   function line_change(canvas, text, x, y, maxwidth, maxheight){
